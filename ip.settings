@@ -1,0 +1,7 @@
+# Local IP
+alias lip="ifconfig | grep broadcast | awk '{print $2}'"
+
+# Global IP
+alias gip='curl -s icanhazip.com'
+
+alias nscan="nmap -sP 192.168.1.*"

@@ -1,0 +1,1 @@
+alias findpi="java -jar ~/.setup/libs/pi-oi.jar"

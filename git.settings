@@ -1,0 +1,8 @@
+alias gst='git status'
+alias gco='git checkout'
+alias gc='git commit -m'
+alias ga='git add'
+alias gp='git push'
+alias gpl='git pull'
+alias gb='git branch -a'
+alias gr='git reset --soft HEAD~1'
