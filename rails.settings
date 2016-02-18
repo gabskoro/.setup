@@ -3,5 +3,6 @@ alias rr='be rake routes'
 alias dbm='be rake db:migrate'
 alias dbs='be rake db:seed'
 alias dbr='be rake db:rollback'
+alias md="be mina deploy -v"
 alias mpd='be mina production deploy -v'
 alias msd='be mina staging deploy -v'
