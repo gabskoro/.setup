@@ -1,2 +1,30 @@
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+
+go-to-gemdir () {
+  local version=`rbenv version`
+  if [[ "$version" =~ ^([0-9])\.([0-9]).([0-9]).*$ ]]; then
+    local major="${BASH_REMATCH[1]}"
+    local minor="${BASH_REMATCH[2]}"
+    local patch="${BASH_REMATCH[3]}"
+
+    local gemdir=`gems_directory $major $minor $patch`
+
+    if [ -d "$gemdir" ]; then
+      cd $gemdir
+    else
+      echo "Expected gems directory does not exist"
+      echo " $gemdir"
+    fi
+  else
+    echo "Unrecognized rbenv version: '$version'"
+  fi
+}
+
+gems_directory () {
+  local gemdir_tpl="$HOME/.rbenv/versions/_rv_/lib/ruby/gems/_rgv_/gems"
+  local rbenv_v="$1.$2.$3"
+  local rbenv_gemdir_v="$1.$2.0"
+
+  echo $gemdir_tpl | sed "s/_rv_/$rbenv_v/;s/_rgv_/$rbenv_gemdir_v/"
+}

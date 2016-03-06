@@ -6,3 +6,4 @@ alias dbr='be rake db:rollback'
 alias md="be mina deploy -v"
 alias mpd='be mina production deploy -v'
 alias msd='be mina staging deploy -v'
+alias dljobs='pwdx $(ps aux | grep "[d]elayed_job" | awk "{print \$2}")'

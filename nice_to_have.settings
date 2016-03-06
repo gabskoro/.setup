@@ -1,1 +1,2 @@
 alias wt="curl http://wttr.in/zagreb"
+alias sqlmap="python ~/sqlmap-dev/sqlmap.py"
