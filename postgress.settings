@@ -1,2 +1,5 @@
 alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
 alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+alias pg-dump='function _pg(){ pg_dump $1 > "$1.sql"; }; _pg'
+alias pg-restore='function _pg(){ pg_dump $1 < "$1.sql"; }; _pg'
