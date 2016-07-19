@@ -7,4 +7,7 @@ alias gpl='git pull'
 alias gb='git branch -a'
 alias gr='git reset --soft HEAD~1'
 alias gt='git log --since="yesterday" --pretty="%s" --reverse'
-alias gtl='git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit'
+alias gtl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+
+#alias browse="open `git remote get-url origin | sed -E 's/^(git@|https:\\/\\/)(.*):(.*)\\.git$/https:\\/\\/\\2\\/\\3/'`"
