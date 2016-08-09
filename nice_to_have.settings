@@ -1,3 +1,4 @@
 alias wt="curl http://wttr.in/zagreb"
 alias sqlmap="python ~/sqlmap-dev/sqlmap.py"
 alias ss="python -m SimpleHTTPServer 8000"
+alias t="tree -I '.git|node_modules|.DS_Store' --dirsfirst --filelimit 15 -L ${1:-3} -aC $2"
