@@ -1,0 +1,2 @@
+# If you installed PHP 7.1 via brew
+export PATH="/usr/local/opt/php@7.1/bin:/usr/local/opt/php@7.1/sbin:$PATH"
