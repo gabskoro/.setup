@@ -1,0 +1,5 @@
+# using iterm2 status bar
+function iterm2_print_user_vars() {
+  iterm2_set_user_var nodeVersion $(node -v)
+  iterm2_set_user_var yarnVersion $(yarn -v)
+}
