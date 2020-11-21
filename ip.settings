@@ -5,5 +5,4 @@ alias lip="ifconfig | grep broadcast | awk '{print $2}'"
 alias gip4='curl -4 icanhazip.com'
 alias gip6='curl -6 icanhazip.com'
 
-
 alias nscan="nmap -sP 192.168.1.*"

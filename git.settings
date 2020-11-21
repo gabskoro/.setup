@@ -1,3 +1,7 @@
+# Export for git-radar
+export PATH="$PATH:$HOME/.git-radar"
+export PS1="\$(git-radar --bash --fetch) "
+
 alias gst='git status'
 alias gco='git checkout'
 alias gc='git commit -m'
@@ -11,5 +15,3 @@ alias gt='git log --since="yesterday" --pretty="%s" --reverse'
 alias gtl="git log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gcb="gco -b"
 alias gd="git diff"
-
-#alias browse="open `git remote get-url origin | sed -E 's/^(git@|https:\\/\\/)(.*):(.*)\\.git$/https:\\/\\/\\2\\/\\3/'`"

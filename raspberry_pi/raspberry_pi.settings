@@ -1,0 +1,1 @@
+alias findpi="java -jar ~/.setup/raspberry_pi/pi-oi.jar"

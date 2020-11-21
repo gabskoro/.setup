@@ -1,0 +1,5 @@
+# Hide "default interactive shell is now zsh" on MacOS Catalina
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+# For the "n" library (node version management)
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
