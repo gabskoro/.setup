@@ -1,0 +1,7 @@
+! [ -e "/usr/local/bin/brew" ] && return
+
+export PATH="/usr/local/sbin:$PATH"
+
+# Don't forget to install openssl through brew
+# Fixes mysql2 gem install issue
+export LIBRARY_PATH="/usr/local/opt/openssl/lib:$LIBRARY_PATH"
